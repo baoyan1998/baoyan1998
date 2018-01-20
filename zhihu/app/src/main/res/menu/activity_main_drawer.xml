@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_offline"
+            android:icon="@drawable/ic_action_offliine"
+            android:title="离线下载" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_action_collect"
+            android:title="我的收藏" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_action_attention"
+            android:title="个人中心" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_action_find"
+            android:title="发现更多设置" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_action_night"
+            android:title="夜间模式" />
+    </group>
+
+    <item android:title="更多">
+        <menu>
+
+            <item
+                android:id="@+id/nav_haoping"
+                android:icon="@drawable/ic_action_comment"
+                android:title="备份此软件"/>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_action_share"
+                android:title="分享给好友" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_action_about"
+                android:title="关于我们" />
+            <item
+                android:title="检查更新的版本"
+                android:icon="@drawable/ic_action_update"/>
+        </menu>
+    </item>
+
+</menu>

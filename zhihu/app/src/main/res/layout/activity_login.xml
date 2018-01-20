@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.github.baoyan1998.zhihu.ui.activity.LoginActivity">
+    <TextView
+        android:id="@+id/tv_mimadenglu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="right"
+        android:padding="16dp"
+        android:textSize="20sp"
+
+        android:text="密码登陆" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="28sp"
+        android:textColor="@android:color/black"
+        android:text="登录知乎，体验更多功能"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        app:errorEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入电话号码"
+            android:inputType="phone"
+            android:singleLine="true"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:id="@+id/et_password"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入验证码"
+                android:inputType="phone"
+                android:singleLine="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="14dp"
+            android:background="@color/colorPrimary"
+            android:text="获取验证码"
+            android:textColor="#FFF" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/login_bt"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="登录"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="48dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:orientation="horizontal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_activity_login_weixin"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="56dp"
+            android:src="@drawable/ic_action_wechat"
+            app:civ_border_color="#000"
+            app:civ_border_width="1dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:id="@+id/image_activity_login_qq"
+            android:layout_marginLeft="64dp"
+            android:src="@drawable/ic_action_qq"
+            app:civ_border_color="#000"
+            app:civ_border_width="1dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_activity_login_sina"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_action_sina"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="56dp"
+            app:civ_border_color="#000"
+            app:civ_border_width="1dp"/>
+    </LinearLayout>
+
+</LinearLayout>
